@@ -1,0 +1,237 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color: #f5f8f9;
+}
+
+.row {
+  background-color: #fff;
+}
+
+.upload
+{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.upload-cover-image{
+  background-color: #fff;
+  color: #727e88;
+  border-color: #d0dce7;
+  height:45px;
+  line-height:25px;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: -11px;
+}
+
+.upload-cover-image:hover{
+  background-color: #727e88;
+  border-color: #D6ECFF;
+}
+
+.line-height{
+  line-height: 1.6em;
+}
+
+.custom-camera{
+  color:#d0dce7;
+  font-size:25px;
+  margin-right: 19px;
+}
+
+.first-row{
+    display: inline-flex;
+    justify-content: space-between;
+    vertical-align:baseline;
+}
+
+.review1{
+  color:#727e88;
+  font-size:16px;
+  margin-right: 21px;
+  padding-left: 20px;
+}
+
+.bg-faded{
+  background-color: #fff;
+}
+
+/*customizing for desktop viewport */
+@media only screen and (min-width: 500px) {
+
+    .mobile {
+        display:none;
+    }
+
+    .container{
+        margin-top: 71px;
+        -webkit-box-shadow: 0px 0px 1px 2px rgba(107,107,107,0.25);
+        -moz-box-shadow: 0px 0px 1px 2px rgba(107,107,107,0.25);
+        box-shadow: 0px 0px 1px 2px rgba(107,107,107,0.25);
+    }
+
+    .logout-button {
+        margin: 23px 22px 23px 0;
+        background-color: #fff;
+        color:#007ee5;
+        border-color: #007ee5;
+        font-weight: bold;
+    }
+
+    .profile_pic{
+      margin-bottom: -35px;
+    }
+
+    .logout {
+      padding-right: 23px;
+      display: inline-flex;
+      justify-content: flex-end;
+    }
+
+    .info{
+      font-size: 11px;
+    }
+
+    .name{
+      font-weight: bold;
+      margin-top: 38px;
+    }
+
+    .custom-star, .custom-empty-star, .custom-pin{
+      color:#727e88;
+      font-size:22px;
+      margin-right: 6px;
+    }
+
+    .custom-pin{
+      padding-right: 10px;
+    }
+
+    .custom-plus{
+      color:#a6b0b7;
+      font-size:24px;
+    }
+
+    .followers{
+      display: inline-flex;
+      justify-content: space-around;
+      align-items:center;
+      padding: 0 4% 0 9%;
+    }
+
+    .followers-number{
+      font-size: 16px;
+      color: #3f454a;
+    }
+
+    .followers-span{
+      color: #a6b0b7;
+      font-size: 14px;
+    }
+
+    .review2{
+      color:#727e88;
+      padding-right: 20px;
+      font-size:14px;
+    }
+
+    .custom-navigation{
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(244,245,246,1);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(244,245,246,1);
+      box-shadow: 0px 0px 5px 0px rgba(244,245,246,1);
+    }
+}
+
+/*customizing for mobile viewport */
+@media only screen and (max-width: 500px) {
+
+    .desktop {
+        display:none;
+    }
+
+    .row{
+      background-color: #f5f8f9;
+    }
+
+    .logout-button {
+        margin: 23px 22px 23px 0;
+        background-color: #f5f8f9;
+        border: none;
+        color:#007ee5;  
+        font-weight: bold;
+    }
+
+    .profile_pic{
+      display: flex;
+      justify-content: center;
+    }
+
+    .info{
+      font-size: 14px;
+      color:#63696d;
+    }
+
+    .name{
+      margin-top: 22px;
+      margin-bottom: 19px;
+      font-weight: bold;
+      font-size: 22px;
+      color: #3f454a;
+    }
+
+    .custom-star, .custom-empty-star {
+      color:#007ee5;
+      font-size:28px;
+      margin-right: 2px;
+    }
+
+    .custom-plus{
+      color:#a6b0b7;
+      font-size: 30px;
+      margin-right: 8px;
+    }
+
+    .custom-plus-followers{
+      color:#a6b0b7;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    .followers{
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items:center;
+    }
+    .followers-number{
+      font-size: 16px;
+      color: #3f454a;
+    }
+
+    .followers-span{
+      color: #a6b0b7;
+      font-size: 1rem;
+    }
+
+    .custom-pin{
+      color:#727e88;
+      font-size:20px;
+      padding-right: 10px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .review2{
+      color:#727e88;
+      padding-left: 13px;
+    }
+    .custom-navigation{
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(244,245,246,1);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(244,245,246,1);
+      box-shadow: 0px 0px 5px 0px rgba(244,245,246,1);
+    }
+}

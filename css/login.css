@@ -1,0 +1,172 @@
+* {
+	color: #f5f8f9;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  height:100vh;
+}
+
+h4{
+	font-weight: 600;
+}
+
+/* loginform customizes the jumbotron */
+.loginform{
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 0;
+}
+
+.loginform h6{
+	font-size:12px;
+	color:#a6b0b7;
+}
+
+.loginform p{
+	font-size:12px;
+	color:#a6b0b7;
+}
+
+/* head1 customizes login header */
+.head1{
+	text-align: center;
+	margin-bottom: 32px;
+	color: #333;
+}
+
+.btn-primary{
+	background-color: #007ee5;
+}
+
+/* txt1 customizes placeholder color */
+.txt1::-webkit-input-placeholder { color: #3f454a; } 
+.txt1:-moz-placeholder { color: #3f454a; }
+.txt1::-moz-placeholder { color: #3f454a; }
+.txt1:-ms-input-placeholder { color: #3f454a; }
+.txt1{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* customizing input fields */
+input[type="email"], input[type="password"] {
+     border-top: 0;
+     border-right: 0;
+     border-left: 0;
+     border-radius:0;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+     -webkit-box-shadow: none;
+     box-shadow: none;
+}
+
+a{
+	color:#007ee5;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/*customizing for mobile viewport */
+@media only screen and (max-width: 500px) {
+
+    .desktop {
+        display:none;
+    }
+    .jumbotron{
+    	height: 100vh;
+    	padding: 80px 0 0 0;
+	}
+
+	h4, p {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	form{
+		position:absolute;
+		bottom:0;
+	}
+
+	button{
+		margin-top: 40%;
+	}
+
+	.form-group, h6, .loginform p{
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+
+	input[type="email"] {
+     	margin-bottom: 50px;
+	}
+
+	input[type="password"]{
+		margin-top: 50px;
+     	margin-bottom: 25px;
+	}
+	.btn-primary,
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary:visited,
+	.btn-primary:focus{
+		border-radius: 0;
+	}
+}
+
+/*customizing for desktop viewport */
+@media only screen and (min-width: 500px) {
+
+    .mobile {
+        display:none;
+    }
+
+    body{
+	    background: url(../img/bg.jpg) no-repeat center center fixed; 
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+    }
+
+	.jumbotron {
+	  	position: absolute;
+	  	top: 50%;
+	  	left: 50%;
+	 	transform: translate(-50%,-50%);
+	 	line-height: 1.8em;
+	 	margin-right: 10%;
+	 	width: 500px;
+	 	padding: 50px 50px 45px 50px;
+	}
+    
+	.loginform p{
+		text-align: center;
+		padding: 0 23px;
+		margin-bottom: 38px;
+	}
+
+	h6{
+		padding-top: 5%;
+		margin-bottom: 0;
+	}
+/* spacing the 2 input fields */
+	.spacer{
+		margin-top: 45px;
+	}
+}
